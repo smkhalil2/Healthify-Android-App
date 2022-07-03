@@ -1,9 +1,8 @@
 # Healthify
 
-Android App
+## Android App
 
-Health and Fitness Tracker App, Final Project - CMSC434
-
+Health and Fitness Tracker, Final Project - CMSC434
 by Shadi Khalil, Ronald Lagos, Joshua Shin, and David Zhen
 
 Healthify is a nutrition and fitness tracker which helps users pursue their health goals. Users may keep track of their food consumption in NUTRITION or their exercises in FITNESS. Additionally, they can plan GOALS and share progress to social media.
@@ -14,4 +13,4 @@ My role in on the project was to coordinate UI graphic design as well as back-en
 
 For additional information about the form and function of Healthify's features, please refer to the video demonstration below:
 
-https://drive.google.com/file/d/1f-j20fIit1mOyU12a9NQgsfbfHIPiJZF/view?usp=sharing
+https://drive.google.com/file/d/1f-j20fIit1mOyU12a9NQgsfbfHIPiJZF/view?usp=sharing 
