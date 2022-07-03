@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp"
+    android:background="#00071A">
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="55dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:srcCompat="@drawable/healthifylogosmall"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/titleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ealthify"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="30dp" />
+
+    <EditText
+        android:id="@+id/usernameEntryLn"
+        android:inputType="text"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        app:backgroundTint="#374463"
+        android:background="#374463"
+        android:textColor="@android:color/white"
+        android:layout_gravity="left"
+        android:hint =" Username"
+        android:textColorHint = "#8497B0"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="30dp" />
+
+    <EditText
+        android:id="@+id/passwordEntryLn"
+        android:inputType= "textPassword"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        app:backgroundTint="#374463"
+        android:background="#374463"
+        android:textColor="@android:color/white"
+        android:layout_gravity="left"
+        android:hint =" Password"
+        android:textColorHint = "#8497B0"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rememberMeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember Me:"
+            android:textColor="@android:color/white"
+            android:textSize="17.5sp"
+            android:textStyle="italic"
+            android:layout_gravity="left"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <CheckBox
+            android:id="@+id/rememberButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="#ffffff" />
+
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="18.5dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="17.5sp"
+        app:backgroundTint="#374463"
+        android:layout_gravity="center"
+        />
+
+
+    <Button
+        android:id="@+id/newUserButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Add New User"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="17.5sp"
+        app:backgroundTint="#374463"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/forgotButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Forgot Password"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="17.5sp"
+        app:backgroundTint="#374463"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

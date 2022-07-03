@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp"
+    android:background="#00071A">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight = "1"/>
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/home24x24"
+            android:background=" #00071A"/>
+
+
+
+
+    </LinearLayout>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="17.5dp" />
+
+    <TextView
+        android:id="@+id/changeUsernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Username"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="5dp" />
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="15dp" />
+
+
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="15dp" />
+
+
+    <EditText
+        android:inputType="text"
+
+        android:id="@+id/newUserEntry"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:background="#ffffff"
+        android:textColor="@android:color/black"
+        app:backgroundTint="#374463"
+        android:hint = " Input New Username "
+        android:textColorHint = "#8497B0"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+
+
+    <EditText
+        android:id="@+id/password_confirmEntry"
+        android:inputType="textPassword"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        app:backgroundTint="#374463"
+        android:textColor="@android:color/black"
+        android:background="#ffffff"
+        android:layout_gravity="left"
+        android:hint = " Password "
+        android:textColorHint = "#8497B0"
+        />
+
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="25dp" />
+
+        <Button
+            android:id="@+id/changeUsernameButtonButton"
+            android:layout_width="165dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="Change Username"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:backgroundTint="#374463" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="25dp" />
+
+        <Button
+            android:id="@+id/changeUserCancelButton"
+            android:layout_width="165dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="Cancel"
+            android:textColor="#FF0000"
+            android:textSize="15sp"
+            app:backgroundTint="#374463" />
+
+
+    </LinearLayout>
+</LinearLayout>

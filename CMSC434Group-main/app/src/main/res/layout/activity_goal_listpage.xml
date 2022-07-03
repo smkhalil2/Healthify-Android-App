@@ -1,0 +1,299 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp"
+    android:background="#00071A">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight = "1"/>
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/home24x24"
+            android:background=" #00071A"/>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Goal"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <EditText
+        android:id="@+id/goalEntry"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_gravity="left"
+        android:background="#ffffff"
+        android:hint=" Describe goal..."
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="#8497B0"
+        app:backgroundTint="#374463" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/typeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal Type"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="5dp" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bmiButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="BMI"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:background="@drawable/unpressed" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/caloriesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Calories"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:background="@drawable/unpressed" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/exerciseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Exercise"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:background="@drawable/unpressed" />
+
+    </RadioGroup>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/chartLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chart Type"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="5dp" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/linechartButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:text="Line Graph"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:drawableBottom="@drawable/linechart35x35"
+        android:textSize="9sp"
+        android:background="@drawable/unpressed"
+        android:layout_weight="1" />
+
+    <Space
+        android:layout_width="5dp"
+        android:layout_height="0dp" />
+
+    <Button
+        android:id="@+id/barchartButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:text="Bar Graph"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:drawableBottom="@drawable/barchart35x35"
+        android:textSize="9sp"
+        android:background="@drawable/unpressed"
+        android:layout_weight="1" />
+
+
+    </RadioGroup>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/goalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal Date"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="17.5sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="5dp" />
+
+    <DatePicker
+        android:id="@+id/goalDatePicker"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:backgroundTint="@android:color/white"
+        android:background="#374463" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00071A"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/ic_plus" />
+
+        <Space
+            android:layout_width="75dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00071A"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/xcross" />
+
+    </LinearLayout>
+
+
+    <!--  <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Space
+            android:layout_width="48dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00071A"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/ic_plus" />
+
+        <Space
+            android:layout_width="75dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00071A"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/ic_xcross" />
+
+    </LinearLayout> -->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/healthifyLabel"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Healthify"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:textColor="@android:color/white"-->
+    <!--        android:textSize="30sp" />-->
+
+</LinearLayout>

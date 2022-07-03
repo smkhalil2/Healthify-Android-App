@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp"
+    android:background="#00071A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/previous30x30"
+            android:background="@null"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight = "1"/>
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/home24x24"
+            android:background=" #00071A"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jogging"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <ImageView
+        android:id="@+id/taskImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/aerobic_white" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wednesday, February 24, 2021, 9:00AM"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+
+    <TextView
+        android:id="@+id/durationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration: 30 min"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/timeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/selectLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select what to track:"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/caloriesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:text="Calories"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:drawableBottom="@drawable/calories35x35"
+            android:textSize="9sp"
+            android:layout_weight="1"
+            android:background="@drawable/unpressed" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/heartRateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/heart35x35"
+            android:gravity="center"
+            android:text="Heart Rate"
+            android:textColor="#FFFFFF"
+            android:textSize="9sp"
+            android:background="@drawable/unpressed" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/stepsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:text="Steps"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:drawableBottom="@drawable/steps35x35"
+            android:textSize="9sp"
+            android:layout_weight="1"
+            android:background="@drawable/unpressed" />
+
+    </RadioGroup>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+    <RadioGroup
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/startPauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="Start"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:drawableBottom="@drawable/play35x35"
+            android:textSize="9sp"
+            android:layout_weight="1"
+            android:background="@drawable/unpressed" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/restartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="Restart"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:drawableBottom="@drawable/restart35x35"
+            android:textSize="9sp"
+            android:layout_weight="1"
+            android:background="@drawable/unpressed" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="Complete"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:drawableBottom="@drawable/finish35x35"
+            android:textSize="9sp"
+            android:layout_weight="1"
+            android:background="@drawable/unpressed" />
+
+    </RadioGroup>
+
+
+
+</LinearLayout>

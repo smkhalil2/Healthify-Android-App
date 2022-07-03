@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00071A"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight = "1"/>
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/home24x24"
+            android:background="#00071A"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/NutritionLogLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Nutrition"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_nutrition_hub_long" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/caloriesConsumedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textColor="#2BF551"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/calorieGoalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=" / 3000 cals"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="30dp" />
+
+    <!--    <DatePicker-->
+    <!--        android:id="@+id/datePicker"-->
+    <!--        android:layout_width="325dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_gravity="left"-->
+    <!--        android:background="#374463"-->
+    <!--        android:calendarViewShown="false"-->
+    <!--        android:datePickerMode="spinner" />-->
+
+
+    <!--    <Space-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="20dp" />-->
+
+    <ListView
+        android:id="@+id/foodList"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:background="#374463"
+        android:textColor="@android:color/white">
+
+    </ListView>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/logFoodButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00071A"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/ic_plus" />
+
+        <Space
+            android:layout_width="75dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/databaseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00071A"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/ic_database_icon" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

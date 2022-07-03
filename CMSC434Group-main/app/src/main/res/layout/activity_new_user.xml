@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp"
+    android:background="#00071A">
+
+    <ImageButton
+        android:id="@+id/backButtonToLogin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/previous30x30"
+        android:background="@null"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="12.5dp" />
+
+    <TextView
+        android:id="@+id/welcomeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Healthify"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/instructionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please input the information to create account"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/instructionLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password must contain one number and both cases"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="17.5dp" />
+
+    <EditText
+        android:id="@+id/usernameEntry"
+        android:inputType="text"
+        android:layout_width="350dp"
+        android:layout_height="32.5dp"
+        app:backgroundTint="#374463"
+        android:background="#374463"
+        android:textColor="@android:color/white"
+        android:layout_gravity="left"
+        android:hint =" Username"
+        android:textColorHint = "#8497B0"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/newPasswordEntry"
+        android:inputType="textPassword"
+        android:layout_width="350dp"
+        android:layout_height="32.5dp"
+        app:backgroundTint="#374463"
+        android:background="#374463"
+        android:textColor="@android:color/white"
+        android:layout_gravity="left"
+        android:hint =" Password (At least 8 characters)"
+        android:textColorHint = "#8497B0"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/passwordConfirmEntry"
+        android:inputType="textPassword"
+        android:layout_width="350dp"
+        android:layout_height="32.5dp"
+        app:backgroundTint="#374463"
+        android:textColor="@android:color/white"
+        android:background="#374463"
+        android:layout_gravity="left"
+        android:hint =" Confirm Password"
+        android:textColorHint = "#8497B0"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/emailEntry"
+        android:inputType="textEmailAddress"
+        android:layout_width="350dp"
+        android:layout_height="32.5dp"
+        app:backgroundTint="#374463"
+        android:textColor="@android:color/white"
+        android:background="#374463"
+        android:layout_gravity="left"
+        android:hint =" Email (Ex:name@webname.domain)"
+        android:textColorHint = "#8497B0"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="17.5dp" />
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth:"
+        android:textStyle="italic"
+        android:layout_gravity="left"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <DatePicker
+        android:id="@+id/datePickerNewUser"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_gravity="left"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:background="#374463"
+        />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="17.5dp" />
+
+    <Button
+        android:id="@+id/continueProcessButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:textSize="17.5sp"
+        app:backgroundTint="#374463"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

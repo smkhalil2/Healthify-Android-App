@@ -1,0 +1,10 @@
+{"name":"Apple","xData":["Sugar","Fiber","Fat"],"yData":[19,4.400000095367432,0.30000001192092896]}
+{"name":"Ice Cream","xData":["Sugar","Fiber","Fat","Protein"],"yData":[14,0.5,7,2.299999952316284]}
+{"name":"Pizza","xData":["Sugar","Fiber","Fat","Protein"],"yData":[3.799999952316284,2.5,10,12]}
+{"name":"Burger","xData":["Sugar","Fiber","Fat","Protein"],"yData":[5,1.100000023841858,17,20]}
+{"name":"Banana","xData":["Sugar","Fiber","Fat","Protein"],"yData":[14,3.0999999046325684,0.4000000059604645,1.2999999523162842]}
+{"name":"Bagel","xData":["Sugar","Fiber","Fat","Protein"],"yData":[6,1.5,1.5,10]}
+{"name":"Pasta","xData":["Carbohydrate","Fat","Protein"],"yData":[14,0.6000000238418579,2.9000000953674316]}
+{"name":"Chips","xData":["Carbohydrate","Fat","Protein","Potassium"],"yData":[15,10,2,0.3610000014305115]}
+{"name":"Salad","xData":["Carbohydrate","Fat","Protein"],"yData":[1,0.10000000149011612,0.5]}
+{"name":"Hot Dog","xData":["Carbohydrate","Fat","Protein","Sodium"],"yData":[2.200000047683716,13,5,0.5669999718666077]}

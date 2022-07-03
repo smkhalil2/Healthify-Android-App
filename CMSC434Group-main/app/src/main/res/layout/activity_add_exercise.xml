@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp"
+    android:background="#00071A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight = "1"/>
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/home24x24"
+            android:background="#00071A"
+            />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/difficultyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/easyButton"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="Easy"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="9sp"
+            android:layout_weight="1"
+            android:background="@drawable/unpressed" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/mediumButton"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="Medium"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="9sp"
+            android:layout_weight="1"
+            android:background="@drawable/unpressed" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/hardButton"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="Hard"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="9sp"
+            android:layout_weight="1"
+            android:background="@drawable/unpressed" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/customButton"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="Custom"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="9sp"
+            android:layout_weight="1"
+            android:background="@drawable/unpressed" />
+
+    </RadioGroup>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/typeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercise Type"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/aerobicButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aerobic"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:drawableBottom="@drawable/ic_aerobic_white"
+            android:textSize="9sp"
+            android:background="@drawable/unpressed"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/strengthButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strength"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:drawableBottom="@drawable/ic_strength_red"
+            android:textSize="9sp"
+            android:background="@drawable/unpressed"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/flexibilityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flexibility"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:drawableBottom="@drawable/ic_stretch_orange"
+            android:textSize="9sp"
+            android:background="@drawable/unpressed"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/balanceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:drawableBottom="@drawable/ic_balance_yellow"
+            android:textSize="9sp"
+            android:background="@drawable/unpressed"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/otherButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:drawableBottom="@drawable/ic_other_pink"
+            android:textSize="9sp"
+            android:layout_weight="1"
+            android:background="@drawable/unpressed" />
+
+    </RadioGroup>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/nameEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:lines="1"
+            android:maxLength="15"
+            android:hint=" Exercise Name"
+            android:background="#374463"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="left"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:backgroundTint="#374463"
+            android:background="#c5c5c5" />
+
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#374463"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:timePickerMode="spinner"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/durationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration:"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <EditText
+            android:id="@+id/hoursEntry"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:maxLines="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="#374463"
+            android:maxLength="2"
+            android:layout_gravity="center"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/hoursLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hr"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <EditText
+            android:id="@+id/minutesEntry"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:maxLength="2"
+            android:textColor="@android:color/white"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="#374463"
+            android:layout_gravity="center"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/minutesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/notificationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/notification25x25"
+            android:background="#00071A"
+            android:cropToPadding="true"/>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/createTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_plus"
+            android:background="#00071A"
+            android:cropToPadding="true"/>
+
+        <Space
+            android:layout_width="75dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/cancelTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00071A"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/xcross" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

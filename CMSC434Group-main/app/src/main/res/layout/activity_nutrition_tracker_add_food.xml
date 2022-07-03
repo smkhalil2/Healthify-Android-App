@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00071A"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/previous30x30"
+            android:background="@null"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight = "1"/>
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/home24x24"
+            android:background=" #00071A"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            app:srcCompat="@drawable/grapessmall" />
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/NutritionTrackerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Log Food Item"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+
+    <EditText
+        android:id="@+id/foodNameEntry"
+        android:layout_width="350dp"
+        android:layout_height="27.5dp"
+        android:layout_gravity="left"
+        android:background="#374463"
+        android:hint=" Food Item"
+        android:textColorHint="#8497B0"
+        android:textColor="@android:color/white"
+        />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+
+    <Spinner
+        android:id="@+id/mealType"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:backgroundTint="#374463"
+        android:textColor="@android:color/white"
+        android:spinnerMode="dropdown"/>
+
+
+    <!--        <ExpandableListView-->
+    <!--            android:id="@+id/mealType"-->
+    <!--            android:layout_width="85dp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:background="#374463"-->
+    <!--            android:textColor="@android:color/black" />-->
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/calorieEntry"
+            android:layout_width="100dp"
+            android:layout_height="27.5dp"
+            android:background="#374463"
+            android:hint=" 0"
+            android:textColorHint="#8497B0"
+            android:textColor="@android:color/white" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/calsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_gravity="left"
+        android:background="#374463"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="30dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/confirmLogFoodButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00071A"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/ic_plus" />
+
+        <Space
+            android:layout_width="75dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/cancelLogFoodButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00071A"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/xcross" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
